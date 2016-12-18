@@ -1,0 +1,57 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px) {
+
+	.rooms-item-container {
+		//width: calc(400px + 400px +20px);
+		width: 820px;
+		margin: 0 auto;
+	}
+
+	.services-item-bottom {
+		width: 290px;
+		font-size: 8px;
+	}
+
+
+}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 1140px) {
+
+		.entertainment-content-item-1 {
+			a {
+				img {
+					height: 360px;
+				}
+			}
+		}
+
+		.entertainment-content-item-title {
+			h3 {
+				font-size: 28px;
+			}
+		}
+
+		.entertainment-content-item-title-small {
+			h3 {
+				font-size: 22px;
+				margin-top: 15px;
+			}
+		}
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+
+	}

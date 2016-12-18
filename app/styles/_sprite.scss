@@ -1,0 +1,283 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$adress-name: 'adress';
+$adress-x: 39px;
+$adress-y: 32px;
+$adress-offset-x: -39px;
+$adress-offset-y: -32px;
+$adress-width: 31px;
+$adress-height: 31px;
+$adress-total-width: 145px;
+$adress-total-height: 112px;
+$adress-image: '../images/sprite.png';
+$adress: (39px, 32px, -39px, -32px, 31px, 31px, 145px, 112px, '../images/sprite.png', 'adress', );
+$arrow-right-name: 'arrow-right';
+$arrow-right-x: 102px;
+$arrow-right-y: 63px;
+$arrow-right-offset-x: -102px;
+$arrow-right-offset-y: -63px;
+$arrow-right-width: 23px;
+$arrow-right-height: 18px;
+$arrow-right-total-width: 145px;
+$arrow-right-total-height: 112px;
+$arrow-right-image: '../images/sprite.png';
+$arrow-right: (102px, 63px, -102px, -63px, 23px, 18px, 145px, 112px, '../images/sprite.png', 'arrow-right', );
+$bed-name: 'bed';
+$bed-x: 102px;
+$bed-y: 81px;
+$bed-offset-x: -102px;
+$bed-offset-y: -81px;
+$bed-width: 20px;
+$bed-height: 12px;
+$bed-total-width: 145px;
+$bed-total-height: 112px;
+$bed-image: '../images/sprite.png';
+$bed: (102px, 81px, -102px, -81px, 20px, 12px, 145px, 112px, '../images/sprite.png', 'bed', );
+$booking-menu-name: 'booking-menu';
+$booking-menu-x: 102px;
+$booking-menu-y: 44px;
+$booking-menu-offset-x: -102px;
+$booking-menu-offset-y: -44px;
+$booking-menu-width: 26px;
+$booking-menu-height: 19px;
+$booking-menu-total-width: 145px;
+$booking-menu-total-height: 112px;
+$booking-menu-image: '../images/sprite.png';
+$booking-menu: (102px, 44px, -102px, -44px, 26px, 19px, 145px, 112px, '../images/sprite.png', 'booking-menu', );
+$bookmark-name: 'bookmark';
+$bookmark-x: 0px;
+$bookmark-y: 35px;
+$bookmark-offset-x: 0px;
+$bookmark-offset-y: -35px;
+$bookmark-width: 34px;
+$bookmark-height: 38px;
+$bookmark-total-width: 145px;
+$bookmark-total-height: 112px;
+$bookmark-image: '../images/sprite.png';
+$bookmark: (0px, 35px, 0px, -35px, 34px, 38px, 145px, 112px, '../images/sprite.png', 'bookmark', );
+$calendar-name: 'calendar';
+$calendar-x: 37px;
+$calendar-y: 93px;
+$calendar-offset-x: -37px;
+$calendar-offset-y: -93px;
+$calendar-width: 19px;
+$calendar-height: 17px;
+$calendar-total-width: 145px;
+$calendar-total-height: 112px;
+$calendar-image: '../images/sprite.png';
+$calendar: (37px, 93px, -37px, -93px, 19px, 17px, 145px, 112px, '../images/sprite.png', 'calendar', );
+$close-name: 'close';
+$close-x: 102px;
+$close-y: 21px;
+$close-offset-x: -102px;
+$close-offset-y: -21px;
+$close-width: 23px;
+$close-height: 23px;
+$close-total-width: 145px;
+$close-total-height: 112px;
+$close-image: '../images/sprite.png';
+$close: (102px, 21px, -102px, -21px, 23px, 23px, 145px, 112px, '../images/sprite.png', 'close', );
+$door-name: 'door';
+$door-x: 132px;
+$door-y: 0px;
+$door-offset-x: -132px;
+$door-offset-y: 0px;
+$door-width: 13px;
+$door-height: 22px;
+$door-total-width: 145px;
+$door-total-height: 112px;
+$door-image: '../images/sprite.png';
+$door: (132px, 0px, -132px, 0px, 13px, 22px, 145px, 112px, '../images/sprite.png', 'door', );
+$footer-logo-name: 'footer-logo';
+$footer-logo-x: 0px;
+$footer-logo-y: 0px;
+$footer-logo-offset-x: 0px;
+$footer-logo-offset-y: 0px;
+$footer-logo-width: 39px;
+$footer-logo-height: 35px;
+$footer-logo-total-width: 145px;
+$footer-logo-total-height: 112px;
+$footer-logo-image: '../images/sprite.png';
+$footer-logo: (0px, 0px, 0px, 0px, 39px, 35px, 145px, 112px, '../images/sprite.png', 'footer-logo', );
+$guest-name: 'guest';
+$guest-x: 19px;
+$guest-y: 93px;
+$guest-offset-x: -19px;
+$guest-offset-y: -93px;
+$guest-width: 18px;
+$guest-height: 18px;
+$guest-total-width: 145px;
+$guest-total-height: 112px;
+$guest-image: '../images/sprite.png';
+$guest: (19px, 93px, -19px, -93px, 18px, 18px, 145px, 112px, '../images/sprite.png', 'guest', );
+$house-name: 'house';
+$house-x: 132px;
+$house-y: 22px;
+$house-offset-x: -132px;
+$house-offset-y: -22px;
+$house-width: 13px;
+$house-height: 18px;
+$house-total-width: 145px;
+$house-total-height: 112px;
+$house-image: '../images/sprite.png';
+$house: (132px, 22px, -132px, -22px, 13px, 18px, 145px, 112px, '../images/sprite.png', 'house', );
+$menu-name: 'menu';
+$menu-x: 102px;
+$menu-y: 0px;
+$menu-offset-x: -102px;
+$menu-offset-y: 0px;
+$menu-width: 30px;
+$menu-height: 21px;
+$menu-total-width: 145px;
+$menu-total-height: 112px;
+$menu-image: '../images/sprite.png';
+$menu: (102px, 0px, -102px, 0px, 30px, 21px, 145px, 112px, '../images/sprite.png', 'menu', );
+$minus-name: 'minus';
+$minus-x: 0px;
+$minus-y: 93px;
+$minus-offset-x: 0px;
+$minus-offset-y: -93px;
+$minus-width: 19px;
+$minus-height: 19px;
+$minus-total-width: 145px;
+$minus-total-height: 112px;
+$minus-image: '../images/sprite.png';
+$minus: (0px, 93px, 0px, -93px, 19px, 19px, 145px, 112px, '../images/sprite.png', 'minus', );
+$phone-name: 'phone';
+$phone-x: 39px;
+$phone-y: 0px;
+$phone-offset-x: -39px;
+$phone-offset-y: 0px;
+$phone-width: 32px;
+$phone-height: 32px;
+$phone-total-width: 145px;
+$phone-total-height: 112px;
+$phone-image: '../images/sprite.png';
+$phone: (39px, 0px, -39px, 0px, 32px, 32px, 145px, 112px, '../images/sprite.png', 'phone', );
+$plus-name: 'plus';
+$plus-x: 71px;
+$plus-y: 31px;
+$plus-offset-x: -71px;
+$plus-offset-y: -31px;
+$plus-width: 27px;
+$plus-height: 27px;
+$plus-total-width: 145px;
+$plus-total-height: 112px;
+$plus-image: '../images/sprite.png';
+$plus: (71px, 31px, -71px, -31px, 27px, 27px, 145px, 112px, '../images/sprite.png', 'plus', );
+$skype-name: 'skype';
+$skype-x: 71px;
+$skype-y: 0px;
+$skype-offset-x: -71px;
+$skype-offset-y: 0px;
+$skype-width: 31px;
+$skype-height: 31px;
+$skype-total-width: 145px;
+$skype-total-height: 112px;
+$skype-image: '../images/sprite.png';
+$skype: (71px, 0px, -71px, 0px, 31px, 31px, 145px, 112px, '../images/sprite.png', 'skype', );
+$title-label-light-name: 'title-label-light';
+$title-label-light-x: 0px;
+$title-label-light-y: 73px;
+$title-label-light-offset-x: 0px;
+$title-label-light-offset-y: -73px;
+$title-label-light-width: 70px;
+$title-label-light-height: 10px;
+$title-label-light-total-width: 145px;
+$title-label-light-total-height: 112px;
+$title-label-light-image: '../images/sprite.png';
+$title-label-light: (0px, 73px, 0px, -73px, 70px, 10px, 145px, 112px, '../images/sprite.png', 'title-label-light', );
+$title-label-name: 'title-label';
+$title-label-x: 0px;
+$title-label-y: 83px;
+$title-label-offset-x: 0px;
+$title-label-offset-y: -83px;
+$title-label-width: 70px;
+$title-label-height: 10px;
+$title-label-total-width: 145px;
+$title-label-total-height: 112px;
+$title-label-image: '../images/sprite.png';
+$title-label: (0px, 83px, 0px, -83px, 70px, 10px, 145px, 112px, '../images/sprite.png', 'title-label', );
+$spritesheet-width: 145px;
+$spritesheet-height: 112px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($adress, $arrow-right, $bed, $booking-menu, $bookmark, $calendar, $close, $door, $footer-logo, $guest, $house, $menu, $minus, $phone, $plus, $skype, $title-label-light, $title-label, );
+$spritesheet: (145px, 112px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

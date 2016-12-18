@@ -1,0 +1,137 @@
+body {
+	//font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	color: $dark-text;
+	min-width: 1000px;
+}
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+//---------------------------------------------------------
+a {
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+}
+
+hr {
+	border: none;
+	margin: 0;
+}
+
+button {
+	outline: none;
+	&:focus, &:active {
+		outline: none;
+	}
+}
+
+
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+.container-full {
+	width: 100%;
+}
+
+.container-fixed {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+.section-title {
+	text-align: center;
+	h2 {
+		font-family: 'PT Serif Caption';
+		font-size: 41px;
+		color: $dark-blue-text;
+		letter-spacing: .1em;
+		margin-bottom: 25px;
+	}
+	p {
+		font-family: 'PT Sans', sans-serif;
+		font-size: 16px;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color: $dark-blue-text;
+		margin-top: 20px;
+	}
+}
+
+//Sprites
+.icon {
+	display: inline-block;
+}
+
+.icon-menu {
+	@include sprite($menu);
+}
+
+.icon-close {
+	@include sprite($close);
+}
+
+.icon-booking-menu {
+	@include sprite($booking-menu);
+}
+
+.icon-arrow-right {
+	@include sprite($arrow-right);
+}
+
+.icon-calendar {
+	@include sprite($calendar);
+}
+
+.icon-title-label {
+	@include sprite($title-label);
+}
+
+.icon-house {
+	@include sprite($house);
+}
+
+.icon-bed {
+	@include sprite($bed);
+}
+
+.icon-guest {
+	@include sprite($guest);
+}
+
+.icon-door {
+	@include sprite($door);
+}
+
+.icon-title-label-light {
+	@include sprite($title-label-light);
+}
+
+.icon-bookmark {
+	@include sprite($bookmark);
+}
+
+.icon-footer-logo {
+	@include sprite($footer-logo);
+}
+
+.icon-adress {
+	@include sprite($adress);
+}
+
+.icon-skype {
+	@include sprite($skype);
+}
+
+.icon-phone {
+	@include sprite($phone);
+}
+//End Sprites
