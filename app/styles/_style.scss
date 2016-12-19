@@ -724,7 +724,7 @@ footer {
 	}
 }
 
-/*---------------- About us top page---------------------- */
+/*---------------- About us page---------------------- */
 //About us top section
 #about-top {
 	height: 300px;
@@ -1011,5 +1011,22 @@ footer {
 		color: $custom-red;
 		font-size: 17px;
 		font-family: 'PT Sans';
+	}
+}
+
+/*--------------Contacts page-------------------------*/
+//Write to us section
+#write-to-us {
+	padding: 55px 0;
+	.section-title h2 {
+		margin-bottom: 45px;
+	}
+}
+
+.contacts-form {
+	@extend .aboutus-form;
+	padding: 0 20px;
+	label.error {
+		right: 20px;
 	}
 }

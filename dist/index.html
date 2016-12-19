@@ -85,52 +85,100 @@
         </div>
       </header>
 
- 
- 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <div class="footer-left">
-          <h6>2016 г. – Гостинично-развлекательный комплекс «Тау-Таш»</h6>
+      <!-- Contacts section -->
+      <section id="contacts">
+        <div class="section-title">
+          <h2>Контакты</h2>
+          <i class="icon icon-title-label-light"></i>
         </div>
-        <div class="footer-right">
-          <div class="footer-logo">
-            <a href="http://internetlab.ru/" target="_blank"><i class="icon icon-footer-logo"></i></a>
+
+        <div class="contacts-content">
+          <div class="contacts-content-left">
+            <i class="icon icon-adress"></i>
+            <div class="contacts-content-left-text">
+              <p>Адрес: Республика Башкортостан,<br>с. Новоабзаково,<br>Горнолыжная 33</p>
+            </div>
+          </div>
+
+          <div class="contacts-content-center">
+            <i class="icon icon-skype"></i>
+            <div class="contacts-content-center-text">
+              <p>Skype: tau-tash</p>
+            </div>
+          </div>
+
+          <div class="contacts-content-right">
+            <i class="icon icon-phone"></i>
+            <div class="contacts-content-right-text">
+              <p>+7 (3519) 59-12-77 круглосуточно<br>7 (34792) 70491 факс<br>+7 922 712 11 77</p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
 
-    <!-- Section Popup -->
-    <div id="aboutus-popup" class="white-popup mfp-hide">
-      <h2>Написать отзыв</h2>
-      <form id="aboutus-form" class="aboutus-form">
-        <div class="input-wrapper">
-          <input type="text" placeholder="Ваше имя">
-          <!-- <label for="field">Required: </label> -->
-          <input type="text" class="left" id="field" name="field" placeholder="Ваша электронная почта*">
+        <div id="map"></div>
+      </section>
+
+      <!-- Write to us -->
+      <section id="write-to-us">
+        <div class="section-title">
+          <h2>Написать нам</h2>
         </div>
-        <textarea placeholder="Текст отзыва"></textarea>
-        <input type="submit" value="отправить сообщение">
-      </form>
-    </div>
+        <div class="container-fixed">
+          <form id="contacts-form" class="contacts-form">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Ваше имя">
+              <input type="text" class="left" id="field" name="field" placeholder="Ваша электронная почта*">
+            </div>
+            <textarea placeholder="Текст отзыва"></textarea>
+            <input type="submit" value="отправить сообщение">
+          </form>
+        </div>
+      </section>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <div class="footer-left">
+            <h6>2016 г. – Гостинично-развлекательный комплекс «Тау-Таш»</h6>
+          </div>
+          <div class="footer-right">
+            <div class="footer-logo">
+              <a href="http://internetlab.ru/" target="_blank"><i class="icon icon-footer-logo"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
 
-    <script src="scripts/vendor.js"></script>
+      <!-- Section Popup -->
+      <div id="aboutus-popup" class="white-popup mfp-hide">
+        <h2>Написать отзыв</h2>
+        <form id="aboutus-form" class="aboutus-form">
+          <div class="input-wrapper">
+            <input type="text" placeholder="Ваше имя">
+            <!-- <label for="field">Required: </label> -->
+            <input type="text" class="left" id="field" name="field" placeholder="Ваша электронная почта*">
+          </div>
+          <textarea placeholder="Текст отзыва"></textarea>
+          <input type="submit" value="отправить сообщение">
+        </form>
+      </div>
 
-    <script src="scripts/main.js"></script>
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCUN-QHFsMjkkltWfZg0S8zzY7k3XQEQMU&callback=initMap" async defer></script>
+      <script src="scripts/vendor.js"></script>
+
+      <script src="scripts/main.js"></script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCUN-QHFsMjkkltWfZg0S8zzY7k3XQEQMU&callback=initMap" async defer></script>
 
 
-  </body>
-  </html>
+    </body>
+    </html>

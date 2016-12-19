@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
 		success: 'valid'
 	});
 
-	$( '#aboutus-form' ).validate({
+	$( '#aboutus-form, #contacts-form' ).validate({
 		rules: {
 			field: {
 				required: true
