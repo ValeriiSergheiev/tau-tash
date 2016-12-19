@@ -84,6 +84,12 @@ jQuery(document).ready(function($) {
 	});
 	//$.validator.messages.required = 'required';
 
+	//Select menu
+	$('#select-period-menu').niceSelect();
+
+	$('.nice-select').click(function() {
+		$(this).toggleClass('nice-select-arrow-top');
+	});
 
 }); //End Ready
 

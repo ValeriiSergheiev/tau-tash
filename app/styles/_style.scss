@@ -1030,3 +1030,134 @@ footer {
 		right: 20px;
 	}
 }
+
+/*---------------------Prices page---------------*/
+#prices {
+	@extend #entertainment;
+}
+
+.prices-content {
+	padding: 45px 0;
+}
+
+.price-select {
+	width: 375px;
+	margin: 0 auto;
+	h3 {
+		text-align: center;
+		color: $custom-blue;
+		font-family: 'PT Serif Caption';
+		font-size: 30px;
+		font-style: italic;
+		letter-spacing: .08em;
+		margin-bottom: 25px;
+	}
+	.nice-select {
+		float: none;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		border-color: $custom-blue;
+		//background-color: $custom-blue;
+		background: #99BDD8 url('../images/arrow-bottom.jpg') right no-repeat;
+		background-size: auto 100%;
+		color: #fff;
+		font-size: 20px;
+		&::after {
+			border-bottom: none;
+			border-right: none;
+		}
+		.list {
+			box-shadow: none;
+			margin-top: 1px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			left: -1px;
+			width: 330px;
+			li {
+				padding-left: 25px;
+				padding-right: 25px;
+				&:hover {
+					opacity: .7;
+				}
+				&:nth-child(odd) {
+					background-color: #638BA9;
+				}
+				&:nth-child(even) {
+					background-color: #6E92AF;
+				}
+			}
+		}
+	}
+}
+
+.nice-select-arrow-top {
+	background: #99BDD8 url('../images/arrow-top.jpg') right no-repeat !important;
+	background-size: auto 100% !important;
+}
+
+.price-table {
+	margin-top: 50px;
+	table {
+		width: 990px;
+		margin: 0 auto;
+	}
+	td, th {
+		border: 1px solid #dcdcdc;
+		vertical-align: middle;
+		text-align: center;
+	}
+	thead {
+		tr {
+			height: 55px;
+		}
+		th {
+			font-size: 22px;
+			color: #132f4b;
+		}
+	}
+	tbody {
+		th {
+			height: 65px;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		td {
+			font-size: 18px;
+			color: #7c7c7c;
+		}
+	}
+}
+
+.price-bottom-text {
+	margin-left: 125px;
+	margin-top: 65px;
+	color: #1c2a38;
+	h6 {
+		margin-bottom: 30px;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	article {
+		line-height: 1.2;
+	}
+	ul {
+		margin: 30px 0;
+		margin-left: 25px;
+		li {
+			position: relative;
+			line-height: 1.2;
+			&::before {
+				position: absolute;
+				content: '•';
+				top: -10px;
+				left: -25px;
+				color: $custom-blue;
+				font-size: 32px;
+			}
+		}
+	}
+}

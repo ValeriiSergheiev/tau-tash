@@ -85,112 +85,53 @@
         </div>
       </header>
 
-      <!-- Entertainment section -->
-      <section id="prices">
+      <!-- Contacts section -->
+      <section id="contacts">
         <div class="section-title">
-          <h2>Цены</h2>
+          <h2>Контакты</h2>
           <i class="icon icon-title-label-light"></i>
         </div>
 
-        <div class="container-fixed">
-          <div class="prices-content">
-
-            <div class="price-select">
-              <h3>Выберите период:</h3>
-
-              <select id="select-period-menu">
-                <option value="1">Новый год 2017</option>
-                <option value="2">Новый год 2018</option>
-                <option value="3">Новый год 2019</option>
-                <option value="4">Новый год 2020</option>
-                <option value="5">Новый год 2021</option>
-                <option value="6">Новый год 2022</option>
-              </select>
+        <div class="contacts-content">
+          <div class="contacts-content-left">
+            <i class="icon icon-adress"></i>
+            <div class="contacts-content-left-text">
+              <p>Адрес: Республика Башкортостан,<br>с. Новоабзаково,<br>Горнолыжная 33</p>
             </div>
-
-            <div class="price-table">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Номер</th>
-                    <th>Комнат</th>
-                    <th>Мест</th>
-                    <th>Корпус</th>
-                    <th>Будни</th>
-                    <th>Выходные</th>
-                    <th>Праздники</th>
-                    <th>Доп.место</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th rowspan="2">Эконом</th>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1000</td>
-                    <td>1200</td>
-                    <td>1200</td>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>1300</td>
-                    <td>1600</td>
-                    <td>1600</td>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Стандарт</th>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1500</td>
-                    <td>2000</td>
-                    <td>2000</td>
-                    <td>400</td>
-                  </tr>
-                  <tr>
-                    <th>Люкс</th>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2500</td>
-                    <td>3000</td>
-                    <td>3000</td>
-                    <td>500</td>
-                  </tr>
-                  <tr>
-                    <th>VIP</th>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>3500</td>
-                    <td>4000</td>
-                    <td>4000</td>
-                    <td>500</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div class="price-bottom-text">
-              <h6>Бронирование бесплатно</h6>
-              <p>Питание по меню ресторана, завтрак входит в стоимость номера и дополнительного места.</p>
-              <p>Скидка для детей - дети до 5 лет бесплатно (без предоставления места, без завтрака).</p>
-              <p>Расчетный час - 12 часов, заезд после 13 часов.</p>
-              <h6>При досрочном заезде или выезде после расчетного часа</h6>
-              <article>оплата производится следующим образом:<br>от 1 ч до 6 ч - оплата по часовая, завтрак не предусмотрен;<br>от 6 ч до 12 ч - оплата за 1/2 суток, завтрак не предусмотрен;<br>более 12 ч - оплата за полные сутки, завтрак не предусмотрен.</article>
-              <ul>
-                <li>бильярд - стоимость одного часа игры 200 р.</li>
-                <li>сауна (1000-1500 рублей)+ бильярд</li>
-              </ul>
-              <p>Агентская комиссия по акциям не предоставляется</p>
-            </div>
-
           </div>
+
+          <div class="contacts-content-center">
+            <i class="icon icon-skype"></i>
+            <div class="contacts-content-center-text">
+              <p>Skype: tau-tash</p>
+            </div>
+          </div>
+
+          <div class="contacts-content-right">
+            <i class="icon icon-phone"></i>
+            <div class="contacts-content-right-text">
+              <p>+7 (3519) 59-12-77 круглосуточно<br>7 (34792) 70491 факс<br>+7 922 712 11 77</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="map"></div>
+      </section>
+
+      <!-- Write to us -->
+      <section id="write-to-us">
+        <div class="section-title">
+          <h2>Написать нам</h2>
+        </div>
+        <div class="container-fixed">
+          <form id="contacts-form" class="contacts-form">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Ваше имя">
+              <input type="text" class="left" id="field" name="field" placeholder="Ваша электронная почта*">
+            </div>
+            <textarea placeholder="Текст отзыва"></textarea>
+            <input type="submit" value="отправить сообщение">
+          </form>
         </div>
       </section>
 
@@ -207,6 +148,20 @@
           </div>
         </div>
       </footer>
+
+      <!-- Section Popup -->
+      <div id="aboutus-popup" class="white-popup mfp-hide">
+        <h2>Написать отзыв</h2>
+        <form id="aboutus-form" class="aboutus-form">
+          <div class="input-wrapper">
+            <input type="text" placeholder="Ваше имя">
+            <!-- <label for="field">Required: </label> -->
+            <input type="text" class="left" id="field" name="field" placeholder="Ваша электронная почта*">
+          </div>
+          <textarea placeholder="Текст отзыва"></textarea>
+          <input type="submit" value="отправить сообщение">
+        </form>
+      </div>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
