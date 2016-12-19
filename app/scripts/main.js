@@ -6,7 +6,11 @@ jQuery(document).ready(function($) {
 		//$('.booking-box').css({right:-250}).animate({"right":"0px"}, "slow");
 	}, 3300);
 
+	//alert(window.location.href);
+	//alert(top.location.pathname);
+
 	setTimeout(function(){
+		//$('.booking-btn').show();
 		$('.booking-box, .booking-btn').show().css({right:-250}).animate({'right':'0px'}, 'slow');
 		//$('.booking-btn a i').removeClass('icon-booking-menu').addClass('icon-close');
 	}, 3700);
@@ -44,8 +48,42 @@ jQuery(document).ready(function($) {
 		pauseOnHover: false
 	});
 
+	//Slider About us
+	$('.reviews-slider').slick({
+		infinite: true,
+		prevArrow: '<button type="button" class="slick-prev"></button>',
+		nextArrow: '<button type="button" class="slick-next"></button>',
+		autoplay: false
+	});
 
-});
+	//Popups
+	$('.open-aboutus-popup').magnificPopup({
+		type:'inline',
+		midClick: true
+	});
+
+	//Validations
+	jQuery.validator.setDefaults({
+		debug: true,
+		success: 'valid'
+	});
+
+	$( '#aboutus-form' ).validate({
+		rules: {
+			field: {
+				required: true
+			}
+		},
+		messages: {
+			field: {
+				required: 'Заполните это поле'
+			}
+		}
+	});
+	//$.validator.messages.required = 'required';
+
+
+}); //End Ready
 
 //Google map
 var map;

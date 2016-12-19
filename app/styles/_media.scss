@@ -39,6 +39,16 @@
 			}
 		}
 
+		#reviews {
+			.slick-prev {
+				left: -45px;
+			}
+			.slick-next {
+				left: auto;
+				right: -45px;
+			}
+		}
+
 	}
 
 	/* Small Devices, Tablets */

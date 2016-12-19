@@ -723,3 +723,293 @@ footer {
 		font-size: 14px;
 	}
 }
+
+/*---------------- About us top page---------------------- */
+//About us top section
+#about-top {
+	height: 300px;
+	background-image: url('../images/about-us-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	.section-title {
+		padding-top: 85px;
+		h2 {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+		}
+	}
+}
+
+.about-description-content {
+	@include clearfix;
+	padding: 40px 20px;
+}
+
+.about-description-content-left {
+	float: left;
+	padding: 35px 15px 15px;
+	border: 1px solid #a3bcd6;
+	width: 46%;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.about-description-content-right {
+	float: right;
+	width: 46%;
+	h3 {
+		font-size: 30px;
+		font-family: 'PT Serif Caption';
+		color: $custom-blue;
+		font-style: italic;
+		margin-bottom: 25px;
+	}
+	article {
+		font-size: 16px;
+		color: $dark-blue-text;
+		margin-bottom: 40px;
+	}
+	ul li {
+		font-size: 16px;
+	}
+	hr {
+		width: 150px;
+		border-top: 1px solid #d0d0d0;
+		margin: 20px 0;
+	}
+	p {
+		margin-bottom: 20px;
+		font-size: 16px;
+		span {
+			font-weight: 700;
+		}
+		a {
+			color: $custom-blue;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+//Reviews section
+#reviews {
+	background-image: url('../images/04fon.png');
+	padding: 35px 0;
+	h3 {
+		text-align: center;
+		color: $custom-blue;
+		font-family: 'PT Serif Caption';
+		font-style: italic;
+		font-size: 30px;
+		letter-spacing: .08em;
+		//margin-bottom: 35px;
+		color: #5b5b5b;
+	}
+	//slider 
+	.slick-prev {
+		position: absolute;
+		top: calc(50% - 20px);
+		left: -110px;
+		background-color: transparent;
+		border: none;
+		background-image: url('../images/arrow-left.png');
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		padding: 0;
+		z-index: 100;
+		&:hover {
+			opacity: .7;
+		}
+	}
+	.slick-next {
+		@extend .slick-prev;
+		background-image: url('../images/arrow-right.png');
+		left: auto;
+		right: -110px;
+	}
+}
+
+.reviews-slider {
+	width: 895px;
+	margin: 0 auto;
+}
+
+.reviews-slider-item-wrapper {
+	position: relative;
+	padding: 35px 0 50px;
+	i {
+		position: absolute;
+		right: 40px;
+		top: 10px;
+		z-index: 100;
+	}
+}
+
+.reviews-slider-item {
+	padding: 35px;
+	border: 2px solid #929292;
+	border-radius: 10px;
+	background-color: #fff;
+	font-size: 16px;
+	h6 {
+		font-weight: 700;
+		margin-bottom: 2px;
+	}
+	span {
+		color: $custom-blue;
+	}
+	p {
+		margin-top: 20px;
+		color: $dark-blue-text;
+	}
+}
+
+//About us discount section
+.aboutus-btn {
+	text-align: center;
+	line-height: 35px;
+	a {
+		display: inline-block;
+		background-color: $custom-red;
+		font-size: 14px;
+		color: #fff;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		padding: 0 35px;
+		border-radius: 4px;
+		//margin-top: 50px;
+		i {
+			margin-right: 25px;
+			margin-top: 5px;
+			position: relative;
+			top: 4px;
+		}
+		&:hover {
+			background-color: darken($custom-red, 10%);
+		}
+	}
+}
+
+.aboutus-discount-content {
+	@include clearfix;
+}
+
+.aboutus-discount-content-left {
+	float: left;
+	width: 48%;
+	text-align: center;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.aboutus-discount-content-right {
+	float: right;
+	width: 48%;
+	h3 {
+		font-size: 30px;
+		letter-spacing: .08;
+		color: $custom-blue;
+		font-family: 'PT Serif Caption';
+		font-style: italic;
+		margin-bottom: 25px;
+		margin-top: 40px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 20px;
+		color: $dark-blue-text;
+	}
+	article {
+		font-size: 16px;
+		color: $custom-blue;
+		font-style: italic;
+	}
+}
+
+//Aboutus-Popup
+#aboutus-popup {
+	.mfp-close {
+		position: absolute;
+		top: -40px;
+		right: 0px;
+		background-image: url('../images/close-popup.png');
+		background-repeat: no-repeat;
+		width: 23px;
+		height: 23px;
+		color: transparent;
+	}
+}
+
+.input-wrapper {
+	@include clearfix;
+}
+
+.aboutus-form {
+	position: relative;
+	input {
+		border-radius: 0;
+		width: 44%;
+		border: 2px solid #e5ecf0;
+		padding: 20px;
+		font-size: 17px;
+		color: $dark-blue-text;
+		letter-spacing: .04em;
+		font-family: 'PT Sans';
+		&:first-child {
+			float: left;
+		}
+		&:nth-child(2) {
+			float: right;
+		}
+		&[type="submit"] {
+			display: block;
+			padding: 0;
+			border: none;
+			width: 280px;
+			margin: 30px auto 10px;
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			border-radius: 4px;
+			background-color: $custom-red;
+			color: #fff;
+			padding: 10px 0;
+			cursor: pointer;
+			&:hover {
+				background-color: darken($custom-red, 10%);
+			}
+		}
+	}
+	textarea {
+		width: calc(100% - 40px);
+		resize: none;
+		margin-top: 40px;
+		height: 90px;
+		border: 2px solid #e5ecf0;
+		padding: 20px;
+		font-size: 17px;
+		color: $dark-blue-text;
+		letter-spacing: .04em;
+		font-family: 'PT Sans';
+	}
+	input.error {
+		border-color: $custom-red;
+	}
+	label.error {
+		position: absolute;
+		top: -25px;
+		right: 0;
+		color: $custom-red;
+		font-size: 17px;
+		font-family: 'PT Sans';
+	}
+}

@@ -25,7 +25,7 @@ hr {
 	margin: 0;
 }
 
-button {
+button, input {
 	outline: none;
 	&:focus, &:active {
 		outline: none;
@@ -63,6 +63,25 @@ button::-moz-focus-inner {
 		letter-spacing: .1em;
 		color: $dark-blue-text;
 		margin-top: 20px;
+	}
+}
+
+//Popups
+.white-popup {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	//width: 1280px;
+	max-width: 1280px;
+	min-width: 1000px;
+	margin: 20px auto;
+	h2 {
+		font-size: 41px;
+		font-family: 'PT Serif Caption';
+		color: $dark-blue-text;
+		letter-spacing: .04em;
+		margin: 55px 0 75px;
+		text-align: center;
 	}
 }
 
@@ -133,5 +152,17 @@ button::-moz-focus-inner {
 
 .icon-phone {
 	@include sprite($phone);
+}
+
+.icon-title-label-white {
+	@include sprite($title-label-white);
+}
+
+.icon-pen {
+	@include sprite($pen);
+}
+
+.icon-apostrophe {
+	@include sprite($apostrophe);
 }
 //End Sprites
