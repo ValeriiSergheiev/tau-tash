@@ -61,16 +61,18 @@ jQuery(document).ready(function ($) {
 	//Popups
 	$('.open-aboutus-popup').magnificPopup({
 		type: 'inline',
-		midClick: true
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
 	});
 
 	//Validations
 	jQuery.validator.setDefaults({
 		debug: true,
-		success: "valid"
+		success: 'valid'
 	});
 
-	$("#aboutus-form").validate({
+	$('#aboutus-form').validate({
 		rules: {
 			field: {
 				required: true
@@ -78,7 +80,7 @@ jQuery(document).ready(function ($) {
 		},
 		messages: {
 			field: {
-				required: "Заполните это поле"
+				required: 'Заполните это поле'
 			}
 		}
 	});

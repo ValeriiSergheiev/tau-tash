@@ -59,7 +59,9 @@ jQuery(document).ready(function($) {
 	//Popups
 	$('.open-aboutus-popup').magnificPopup({
 		type:'inline',
-		midClick: true
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
 	});
 
 	//Validations
