@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тау-Таш</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="styles/vendor.css">
+
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <!-- Preloader -->
+      <!-- <div id="loader">
+        <img src="images/25.gif" alt="preloader img">
+      </div> -->
+
+      <!-- Header -->
+      <header>
+        <div class="container-full">
+          <div class="menu-btn">
+            <a href="#"><i class="icon icon-menu"></i>меню</a>
+          </div>
+
+          <nav class="main-menu">
+            <ul class="menu">
+              <li><a href="#"><i class="icon-ic-montagne-noire"></i> О нас</a></li>
+              <li><a href="#"><i class="icon-business"></i>Номера</a></li>
+              <li><a href="#"><i class="icon-plate-fork-and-knife"></i>Ресторан</a></li>
+              <li><a href="#"><i class="icon-microphone-black-shape"></i>Конференц-зал</a></li>
+              <li><a href="#"><i class="icon-percentage"></i>Спецпредложения</a></li>
+              <li><a href="#"><i class="icon-shop"></i>Цены</a></li>
+              <li><a href="#"><i class="icon-cube"></i>3d-тур</a></li>
+              <li><a href="#"><i class="icon-glasses"></i>Услуги и развлечения</a></li>
+              <li><a href="#"><i class="icon-photo-camera"></i>Фото</a></li>
+              <li><a href="#"><i class="icon-envelope"></i>Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="logo">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+          </div>
+
+          <div class="booking-btn">
+            <a href="#"><i class="icon icon-close"></i>бронирование</a>
+          </div>
+
+          <div class="booking-box">
+            <form action="#" id="booking-form" class="booking-form">
+              <div class="booking-form-input-wrapper">
+                <input type="text" placeholder="Дата заезда" readonly="readonly">
+                <i class="icon icon-calendar"></i>
+              </div>
+
+              <div class="booking-form-input-wrapper">
+                <input type="text" placeholder="Дата выезда" readonly="readonly">
+                <i class="icon icon-calendar"></i>
+              </div>
+
+              <div class="booking-form-input-wrapper">
+                <input type="text" placeholder="2" maxlength="2">
+                <span>взрослых</span>
+              </div>
+
+              <div class="booking-form-input-wrapper">
+                <input type="text" placeholder="0" maxlength="2">
+                <span>детей</span>
+              </div>
+
+              <button for="booking-form">забронировать <i class="icon icon-arrow-right"></i></button>
+            </form>
+            <div class="booking-stock">
+              <img src="images/stock.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Entertainment section -->
+      <section id="prices">
+        <div class="section-title">
+          <h2>Цены</h2>
+          <i class="icon icon-title-label-light"></i>
+        </div>
+
+        <div class="container-fixed">
+          <div class="prices-content">
+
+            <div class="price-select">
+              <h3>Выберите период:</h3>
+
+              <select id="select-period-menu">
+                <option value="1">Новый год 2017</option>
+                <option value="2">Новый год 2018</option>
+                <option value="3">Новый год 2019</option>
+                <option value="4">Новый год 2020</option>
+                <option value="5">Новый год 2021</option>
+                <option value="6">Новый год 2022</option>
+              </select>
+            </div>
+
+            <div class="price-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Номер</th>
+                    <th>Комнат</th>
+                    <th>Мест</th>
+                    <th>Корпус</th>
+                    <th>Будни</th>
+                    <th>Выходные</th>
+                    <th>Праздники</th>
+                    <th>Доп.место</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="2">Эконом</th>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1000</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>350</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1300</td>
+                    <td>1600</td>
+                    <td>1600</td>
+                    <td>350</td>
+                  </tr>
+                  <tr>
+                    <th>Стандарт</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1500</td>
+                    <td>2000</td>
+                    <td>2000</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <th>Люкс</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2500</td>
+                    <td>3000</td>
+                    <td>3000</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <th>VIP</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3500</td>
+                    <td>4000</td>
+                    <td>4000</td>
+                    <td>500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="price-bottom-text">
+              <h6>Бронирование бесплатно</h6>
+              <p>Питание по меню ресторана, завтрак входит в стоимость номера и дополнительного места.</p>
+              <p>Скидка для детей - дети до 5 лет бесплатно (без предоставления места, без завтрака).</p>
+              <p>Расчетный час - 12 часов, заезд после 13 часов.</p>
+              <h6>При досрочном заезде или выезде после расчетного часа</h6>
+              <article>оплата производится следующим образом:<br>от 1 ч до 6 ч - оплата по часовая, завтрак не предусмотрен;<br>от 6 ч до 12 ч - оплата за 1/2 суток, завтрак не предусмотрен;<br>более 12 ч - оплата за полные сутки, завтрак не предусмотрен.</article>
+              <ul>
+                <li>бильярд - стоимость одного часа игры 200 р.</li>
+                <li>сауна (1000-1500 рублей)+ бильярд</li>
+              </ul>
+              <p>Агентская комиссия по акциям не предоставляется</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <div class="footer-left">
+            <h6>2016 г. – Гостинично-развлекательный комплекс «Тау-Таш»</h6>
+          </div>
+          <div class="footer-right">
+            <div class="footer-logo">
+              <a href="http://internetlab.ru/" target="_blank"><i class="icon icon-footer-logo"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+
+      <script src="scripts/vendor.js"></script>
+
+      <script src="scripts/main.js"></script>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCUN-QHFsMjkkltWfZg0S8zzY7k3XQEQMU&callback=initMap" async defer></script>
+
+
+    </body>
+    </html>

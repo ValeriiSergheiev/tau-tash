@@ -1161,3 +1161,52 @@ footer {
 		}
 	}
 }
+
+/*------------------------Photo page--------------------*/
+//Photo section 
+#photo {
+	@extend #entertainment;
+}
+
+.photo-content {
+	//@extend .entertainment-content;
+}
+
+//Gallery arrows styling
+.mfp-arrow-left:after,
+.mfp-arrow-left:before,
+.mfp-arrow-right:after,
+.mfp-arrow-right:before,
+.mfp-a,
+.mfp-b {
+	display: none;
+}
+
+button.mfp-arrow {
+	opacity: 1;
+}
+
+button.mfp-arrow-left {
+	background-image: url('../images/arrow-left-gallery.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	&:hover {
+		opacity: .5;
+	}
+}
+
+button.mfp-arrow-right {
+	background-image: url('../images/arrow-right-gallery.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	&:hover {
+		opacity: .5;
+	}
+}
+
+.mfp-title {
+	font-size: 26px;
+	letter-spacing: .1em;
+	margin-top: 20px;
+	line-height: 1.2;
+}

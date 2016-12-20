@@ -66,6 +66,26 @@ jQuery(document).ready(function ($) {
 		mainClass: 'mfp-fade'
 	});
 
+	//Gallery show 
+	$('.gallery').each(function () {
+		// the containers for all your galleries
+		$(this).magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery: {
+				enabled: true
+			},
+			zoom: {
+				enabled: true,
+				duration: 300,
+				easing: 'ease-in-out'
+			},
+			image: {
+				titleSrc: 'title'
+			}
+		});
+	});
+
 	//Validations
 	jQuery.validator.setDefaults({
 		debug: true,
