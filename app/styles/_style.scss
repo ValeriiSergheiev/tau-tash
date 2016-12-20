@@ -1210,3 +1210,47 @@ button.mfp-arrow-right {
 	margin-top: 20px;
 	line-height: 1.2;
 }
+
+/*------------------------Stock page---------------------*/
+//Stock section
+#stock {
+	@extend #photo;
+	hr {
+		border-color: $red-text;
+	}
+}
+
+.stock-wrapper {
+	@include clearfix;
+	padding: 40px 20px 80px;
+	width: calc(100% - 40px);
+	margin: 0 auto;
+	min-height: calc(100vh - 94px - 152px - 65px - 120px);
+}
+
+.stock-item {
+	@extend .services-item;
+	width: 300px;
+	height: 520px;
+	margin-right: calc((100% - 6px - 300px * 3) / 2);
+	border: 1px solid #c4c4c4;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.stock-item-img {
+	@extend .services-item-img;
+	border-bottom: 1px solid #c4c4c4;
+	i {
+		right: 15px;
+	}
+}
+
+.stock-item-bottom {
+	@extend .services-item-bottom;
+	width: calc(100% - 10px);
+	border: none;
+	//height: 315px;
+	padding: 0 5px;
+}
