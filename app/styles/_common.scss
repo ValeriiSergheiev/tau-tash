@@ -47,6 +47,12 @@ button::-moz-focus-inner {
 	margin: 0 auto;
 }
 
+.container-fixed-1320 {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
 .section-title {
 	text-align: center;
 	h2 {
@@ -117,6 +123,10 @@ button::-moz-focus-inner {
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
+}
+
+.mfp-counter {
+	display: none !important;
 }
 
 //Sprites
@@ -198,5 +208,47 @@ button::-moz-focus-inner {
 
 .icon-apostrophe {
 	@include sprite($apostrophe);
+}
+
+.icon-zoom {
+	@include sprite($zoom);
+}
+
+.icon-room-1 {
+	@include sprite($room-1);
+}.icon-room-2 {
+	@include sprite($room-2);
+}.icon-room-3 {
+	@include sprite($room-3);
+}.icon-room-4 {
+	@include sprite($room-4);
+}.icon-room-5 {
+	@include sprite($room-5);
+}.icon-room-6 {
+	@include sprite($room-6);
+}.icon-room-7 {
+	@include sprite($room-7);
+}.icon-room-8 {
+	@include sprite($room-8);
+}.icon-room-9 {
+	@include sprite($room-9);
+}.icon-room-10 {
+	@include sprite($room-10);
+}.icon-room-11 {
+	@include sprite($room-11);
+}.icon-room-12 {
+	@include sprite($room-12);
+}.icon-room-13 {
+	@include sprite($room-13);
+}.icon-room-14 {
+	@include sprite($room-14);
+}.icon-room-15 {
+	@include sprite($room-15);
+}.icon-room-16 {
+	@include sprite($room-16);
+}.icon-room-17 {
+	@include sprite($room-17);
+}.icon-room-18 {
+	@include sprite($room-18);
 }
 //End Sprites

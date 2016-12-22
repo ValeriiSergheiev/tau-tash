@@ -55,7 +55,7 @@ header {
 		}
 		i {
 			position: absolute;
-			top: 40px;
+			top: 38px;
 			left: 30px;
 		}
 	}
@@ -1253,4 +1253,283 @@ button.mfp-arrow-right {
 	border: none;
 	//height: 315px;
 	padding: 0 5px;
+}
+
+/*--------------------Hotel room page--------------------*/
+//Hotel roomt top section
+#hotel-room-top {
+	@extend #about-top;
+	background-image: url('../images/hotel-room-bg.jpg');
+	.section-title {
+		padding-top: 56px;
+		a {
+			display: inline-block;
+			background-color: $custom-red;
+			padding: 10px 30px;
+			margin-top: 40px;
+			border-radius: 4px;
+			font-size: 14px;
+			letter-spacing: .1em;
+			text-transform: uppercase;
+			color: #fff;
+			&:hover {
+				background-color: darken($custom-red, 10%);
+			}
+		}
+	}
+}
+
+.hotel-room-content-wrapper {
+	@include clearfix;
+	padding: 40px 0 55px;
+}
+
+.hotel-room-content-left {
+	float: left;
+	max-width: calc(100% - 640px);
+}
+
+.hotel-room-content-right {
+	float: right;
+	width: 615px;
+	padding-left: 25px;
+}
+
+.slideshow-display {
+	margin-bottom: 15px;
+	position: relative;
+	a {
+		cursor: zoom-in;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.zoom-block	 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 16px;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+	}
+}
+
+.slide-show-list {
+	@include clearfix;
+	//overflow: hidden;
+}
+
+.slideshow-item {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: calc((100% - 20px) / 3);
+	&:last-child a:hover:before {
+		background-color: transparent;
+	}
+	&:last-child a:hover {
+		opacity: .7;
+	}
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+	a {
+		display: block;
+		position: relative;
+		&:hover:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $custom-blue;
+			opacity: .8;
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.d-item {
+	position: relative;
+	a {
+		display: block;
+		&:last-child {
+			position: absolute;
+			z-index: 100;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.about-room-title {
+	h3 {
+		font-family: 'PT Serif Caption';
+		font-style: italic;
+		color: $custom-blue;
+		font-size: 30px;
+		letter-spacing: .08em;
+		margin-bottom: 30px;
+	}
+	p {
+		font-size: 16px;
+		color: $dark-text;
+		margin-bottom: 25px;
+		line-height: 1.2;
+	}
+	ul {
+		margin: 25px 0;
+		margin-left: 25px;
+		li {
+			position: relative;
+			line-height: 1.2;
+			&::before {
+				position: absolute;
+				content: '•';
+				top: -10px;
+				left: -25px;
+				color: $custom-blue;
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+
+.rooms-item-characteristics {
+	@extend .rooms-item-bottom-main;
+}
+
+.rooms-item-row-left {
+	width: 320px;
+}
+
+.room-options {
+	@include clearfix;
+}
+
+.room-options-row {
+	margin-bottom: 24px;
+	//height: 55px;
+}
+
+.room-options-left {
+	display: table-cell;
+	vertical-align: middle;
+	float: left;
+	border-bottom: 1px solid #e8e8e8;
+	//padding-bottom: 20px;
+	height: 55px;
+	div {
+		display: table-cell;
+		vertical-align: middle;
+		h6 {
+			font-size: 16px;
+			color: #5d5d5d;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+		}
+		&:first-child {
+			width: 220px;
+		}
+	}
+}
+
+.room-options-right {
+	@extend .room-options-left;
+	float: right;
+}
+
+.phone-order {
+	border-bottom: 1px solid #e8e8e8;
+	padding: 40px 0 30px;
+	h5 {
+		font-size: 26px;
+		color: $dark-text;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 22px;
+		color: $dark-text;
+	}
+}
+
+.room-stock {
+	//width: 100%;
+	display: block;
+	margin-top: 20px;
+	top: 17px;
+	@include clearfix;
+	a {
+		transition: .2s;
+		width: calc(100% / 2 - 20px);
+		&:hover {
+			opacity: .7;
+		}
+		&:first-child {
+			float: left;
+		}
+		&:last-child {
+			float: right;
+		}
+	}
+}
+
+.room-stock-item {
+	@extend .stock-item;
+	width: 100%;
+}
+
+.room-stock-item-bottom {
+	@extend .stock-item-bottom;
+	width: calc(100% - 15px) !important;
+}
+
+/*----------------------3D tour page--------------------*/
+#tour {
+	@extend #prices;
+}
+
+.tour-content {
+	@include clearfix
+	padding: 80px 0 30px;
+	min-height: calc(100vh - 94px - 152px - 65px - 110px);
+}
+
+.tour-item {
+	float: left;
+	margin-right: 20px;
+	width: calc((100% - 20px * 4) / 5);
+	//margin-bottom: 80px;
+	&:nth-child(5n) {
+		margin-right: 0;
+	}
+	a {
+		display: block;
+		&:hover {
+			transition: .2s;
+			opacity: .7;
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		h6 {
+			font-size: 15px;
+			color: $dark-text;
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 50px;
+		}
+	}
 }

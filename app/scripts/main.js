@@ -83,6 +83,8 @@ jQuery(document).ready(function($) {
 		});
 	});
 
+	
+
 	//Validations
 	jQuery.validator.setDefaults({
 		debug: true,
@@ -108,6 +110,40 @@ jQuery(document).ready(function($) {
 
 	$('.nice-select').click(function() {
 		$(this).toggleClass('nice-select-arrow-top');
+	});
+
+	//Hotel room gallery
+	$('.slideshow-item a:first-child').click(function(event) {
+		event.preventDefault();
+	});
+	$('.slideshow-item a').click(function(event) {
+		//event.preventDefault();
+		var
+		path = $(this).find('img').attr('src'),
+		title = $(this).attr('title'),
+		//cut = "<p>frfrf</p>",
+		item_index = $(this).closest('.slideshow-item').index() + 2;
+
+		if (!$(this).closest('.slideshow-item').hasClass('active')) {
+			$(this).closest('.slideshow-item').addClass('active').siblings().removeClass('active');
+			//$(cut).appendTo('.slideshow-display');
+			//cut = "";
+			//cut = $('.slideshow-display a:nth-child(' + item_index + ')').clone();
+			//$('.slideshow-display a:nth-child(' + item_index + ')').remove();
+			//$('.slideshow-display a:nth-child(' + item_index + ')').replaceWith($('.slideshow-display a:nth-child(1)'));
+			
+				//$('.d-item').stopPropagation();
+			
+
+			$('.slideshow-display img').fadeOut(200, function() {
+				$(this).attr('src', path).fadeIn(200);
+				$(this).closest('a').attr('href', path);
+				$(this).closest('a').attr('title', title);
+			});
+			$('.zoom-block').fadeOut(200, function() {
+				$(this).fadeIn(200);
+			});
+		};
 	});
 
 }); //End Ready
