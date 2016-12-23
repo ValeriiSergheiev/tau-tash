@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
   <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
   <link rel="stylesheet" href="/bower_components/jquery-nice-select/css/nice-select.css" />
+  <link rel="stylesheet" href="/bower_components/air-datepicker/dist/css/datepicker.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -33,55 +34,60 @@
       </div>
 
       <!-- Header -->
-      <header>
-        <div class="container-full">
-          <div class="menu-btn">
-            <a href="#"><i class="icon icon-menu"></i>меню</a>
-          </div>
+     <header>
+        <div class="header-content">
+          <div class="container-full">
+            <div class="menu-btn">
+              <a href="#"><i class="icon icon-menu"></i>меню</a>
+            </div>
 
-          <nav class="main-menu">
-            <ul class="menu">
-              <li><a href="#"><i class="icon-ic-montagne-noire"></i> О нас</a></li>
-              <li><a href="#"><i class="icon-business"></i>Номера</a></li>
-              <li><a href="#"><i class="icon-plate-fork-and-knife"></i>Ресторан</a></li>
-              <li><a href="#"><i class="icon-microphone-black-shape"></i>Конференц-зал</a></li>
-              <li><a href="#"><i class="icon-percentage"></i>Спецпредложения</a></li>
-              <li><a href="#"><i class="icon-shop"></i>Цены</a></li>
-              <li><a href="#"><i class="icon-cube"></i>3d-тур</a></li>
-              <li><a href="#"><i class="icon-glasses"></i>Услуги и развлечения</a></li>
-              <li><a href="#"><i class="icon-photo-camera"></i>Фото</a></li>
-              <li><a href="#"><i class="icon-envelope"></i>Контакты</a></li>
-            </ul>
-          </nav>
+            <nav class="main-menu">
+              <ul class="menu">
+                <li><a href="#"><i class="icon-ic-montagne-noire"></i> О нас</a></li>
+                <li><a href="#"><i class="icon-business"></i>Номера</a></li>
+                <li><a href="#"><i class="icon-plate-fork-and-knife"></i>Ресторан</a></li>
+                <li><a href="#"><i class="icon-microphone-black-shape"></i>Конференц-зал</a></li>
+                <li><a href="#"><i class="icon-percentage"></i>Спецпредложения</a></li>
+                <li><a href="#"><i class="icon-shop"></i>Цены</a></li>
+                <li><a href="#"><i class="icon-cube"></i>3d-тур</a></li>
+                <li><a href="#"><i class="icon-glasses"></i>Услуги и развлечения</a></li>
+                <li><a href="#"><i class="icon-photo-camera"></i>Фото</a></li>
+                <li><a href="#"><i class="icon-envelope"></i>Контакты</a></li>
+              </ul>
+            </nav>
 
-          <div class="logo">
-            <a href="#"><img src="images/logo.png" alt=""></a>
-          </div>
+            <div class="logo">
+              <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
 
-          <div class="booking-btn">
-            <a href="#"><i class="icon icon-close"></i>бронирование</a>
-          </div>
+            <div class="booking-btn">
+              <a href="#"><i class="icon icon-close"></i>бронирование</a>
+            </div>
 
-          <div class="booking-box">
-            <form action="#" id="booking-form" class="booking-form">
-              <div class="booking-form-input-wrapper">
-                <input type="text" placeholder="Дата заезда" readonly="readonly">
-                <i class="icon icon-calendar"></i>
-              </div>
+            <div class="booking-box">
+              <form action="#" id="booking-form" class="booking-form">
+                <div class="booking-form-input-wrapper">
+                  <input type="text" placeholder="Дата заезда / выезда" readonly="readonly" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" id="booking-datepicker">
+                  <i class="icon icon-calendar"></i>
+                </div>
 
-              <div class="booking-form-input-wrapper">
+              <!-- <div class="booking-form-input-wrapper">
                 <input type="text" placeholder="Дата выезда" readonly="readonly">
                 <i class="icon icon-calendar"></i>
-              </div>
+              </div> -->
 
               <div class="booking-form-input-wrapper">
-                <input type="text" placeholder="2" maxlength="2">
+                <input type="text" placeholder="0" maxlength="2" pattern="[0-9]*" value="">
                 <span>взрослых</span>
+                <i class="icon icon-minus"></i>
+                <i class="icon icon-plus"></i>
               </div>
 
               <div class="booking-form-input-wrapper">
-                <input type="text" placeholder="0" maxlength="2">
+                <input type="text" placeholder="0" maxlength="2" pattern="[0-9]*">
                 <span>детей</span>
+                <i class="icon icon-minus"></i>
+                <i class="icon icon-plus"></i>
               </div>
 
               <button for="booking-form">забронировать <i class="icon icon-arrow-right"></i></button>
@@ -91,7 +97,8 @@
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
       <!-- Slider section -->
       <section id="slider">
@@ -623,6 +630,7 @@
       <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
       <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
       <script src="/bower_components/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+      <script src="/bower_components/air-datepicker/dist/js/datepicker.js"></script>
       <!-- endbower -->
       <!-- endbuild -->
 

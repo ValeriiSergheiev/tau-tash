@@ -1,6 +1,6 @@
 //Preloader
 #loader {
-	background-color: #5279f4;
+	background-color: #041e3c;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -19,8 +19,18 @@
 
 // Header
 header {
-	//display: none;
 	position: relative;
+	height: 94px;
+	//background-image: url('../images/01shapka.png');
+	//color: #fff;
+}
+
+.header-content {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 94px;
 	background-image: url('../images/01shapka.png');
 	color: #fff;
 }
@@ -77,14 +87,15 @@ header {
 
 .main-menu {
 	display: none;
-	position: absolute;
+	position: fixed;
 	box-sizing: border-box;
 	width: 250px;
-	height: 660px;
+	//height: 660px;
 	top: 94px;
+	bottom: 0;
 	left: 0;
 	background-image: url('../images/05menu_otkrito.png');
-	z-index: 100;
+	z-index: 10000;
 }
 
 .menu {
@@ -114,7 +125,6 @@ header {
 
 .booking-box {
 	@extend .main-menu;
-	//display: block;
 	left: auto;
 	right: 0;
 }
@@ -159,9 +169,13 @@ button {
 .booking-form-input-wrapper {
 	position: relative;
 	z-index: 10;
-	&:first-child, &:nth-child(2) {
+	&:hover input {
+		border-color: #5279f4;
+	}
+	/*&:first-child, &:nth-child(2) {
 		input {
 			cursor: pointer;
+			font-size: 14px;
 		}
 		i {
 			position: absolute;
@@ -169,7 +183,7 @@ button {
 			right: 30px;
 			z-index: -10;
 		}
-	}
+	}*/
 	input {
 		display: block;
 		width: calc(100% - 60px);
@@ -180,14 +194,39 @@ button {
 		font-size: 15px;
 		color: #fff;
 		background-color: transparent;
-		&:hover {
-			border-color: #5279f4;
+		&:first-child {
+			font-size: 14px;
+			cursor: pointer;
 		}
 	}
 	span {
 		position: absolute;
 		left: 50px;
 		top: 15px;
+	}
+	i {
+		position: absolute;
+		top: 15px;
+		right: 30px;
+		margin-left: 10px;
+		z-index: -10;
+	}
+	i.icon-plus {
+		top: 11px;
+		z-index: 10;
+		cursor: pointer;
+		&:hover {
+			opacity: .7;
+		}
+	}
+	i.icon-minus {
+		top: 16px;
+		right: 70px;
+		z-index: 10;
+		cursor: pointer;
+		&:hover {
+			opacity: .7;
+		}
 	}
 }
 
@@ -1532,4 +1571,115 @@ button.mfp-arrow-right {
 			margin-bottom: 50px;
 		}
 	}
+}
+
+//Calendar
+.datepickers-container {
+	left: -14px;
+}
+
+.datepicker--pointer {
+	display: none;
+}
+
+.datepicker {
+	//background: #fff;
+	background: transparent;
+	background-image: url('../images/05menu_otkrito.png');
+	//border: 1px solid #dbdbdb;
+	border: 1px solid #5279f4;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	//border-radius: 4px;
+	border-radius: 0;
+	box-sizing: content-box;
+	font-family: Tahoma, sans-serif;
+	font-size: 13px;
+	color: #4a4a4a;
+	width: 248px;
+	position: absolute;
+	padding: 5px 0 20px;
+	left: -100000px;
+	opacity: 0;
+	z-index: 200;
+}
+
+.datepicker--cell-day {
+	color: #fff;
+}
+
+.datepicker--cell {
+	height: 20px;
+	margin: 4px 0;
+	&:hover {
+		background-color: #377AF8;
+		border-radius: 17px;
+		color: #fff;
+	}
+}
+
+.datepicker--cell.-in-range- {
+	color: #fff;
+	background-color: #377AF8;
+	&:hover {
+		background-color: #377AF8;
+		border-radius: 0;
+	}
+}
+
+.datepicker--cell.-range-from- {
+	background-color: #377AF8;
+	border-radius: 17px 0 0 17px;
+	border-color: transparent;
+	&:hover {
+		background-color: #377AF8;
+	}
+}
+
+.datepicker--cell.-range-to- {
+	background-color: #377AF8;
+	border-radius: 0 17px 17px 0;
+	border-color: transparent;
+	&:hover {
+		background-color: #377AF8;
+	}
+}
+
+.datepicker--cell.-selected-.-current- {
+	background-color: #377AF8;
+}
+
+.datepicker--day-name {
+	color: #fff;
+}
+
+.-weekend- {
+	color: #1b5b8e;
+}
+
+.datepicker--nav-title {
+	color: #fff;
+	i {
+		color: #fff;
+	}
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+.datepicker--nav-action {
+	color: red;
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+.datepicker--nav {
+	border-bottom: none;
+	margin-bottom: 10px;
+}
+
+.datepicker--nav-action path {
+	fill: #A4BCCB;
+	stroke: #A4BCCB;
+	stroke-width: 2px;
 }

@@ -214,6 +214,14 @@ button::-moz-focus-inner {
 	@include sprite($zoom);
 }
 
+.icon-plus {
+	@include sprite($plus);
+}
+
+.icon-minus {
+	@include sprite($minus);
+}
+
 .icon-room-1 {
 	@include sprite($room-1);
 }.icon-room-2 {

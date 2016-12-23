@@ -8,14 +8,14 @@ jQuery(document).ready(function ($) {
 		//$('.booking-box').css({right:-250}).animate({"right":"0px"}, "slow");
 	}, 3300);
 
-	//alert(window.location.href);
-	//alert(top.location.pathname);
-
-	setTimeout(function () {
-		//$('.booking-btn').show();
-		$('.booking-box, .booking-btn').show().css({ right: -250 }).animate({ 'right': '0px' }, 'slow');
-		//$('.booking-btn a i').removeClass('icon-booking-menu').addClass('icon-close');
-	}, 3700);
+	//Бронирование(анимация). Строка пути относительно корня веб-сайта
+	if (window.location.pathname == '/tau-tash/' || window.location.pathname == '/tau-tash/index.html') {
+		setTimeout(function () {
+			$('.booking-box, .booking-btn').show().css({ right: -250 }).animate({ 'right': '0px' }, 'slow');
+		}, 3700);
+	} else {
+		$('.booking-btn').show().find('i').removeClass('icon-close').addClass('icon-booking-menu');
+	};
 
 	//Menu
 	$('.menu-btn a').click(function (event) {
@@ -146,7 +146,41 @@ jQuery(document).ready(function ($) {
 			});
 		};
 	});
-}); //End Ready
+
+	//Calendar
+	$('#booking-datepicker').datepicker({
+		autoClose: true,
+		offset: 10
+	});
+
+	//Booking counter
+	var i = 0;
+	$('.booking-form-input-wrapper:nth-child(2) i.icon-plus').click(function () {
+		i++;
+		$('.booking-form-input-wrapper:nth-child(2) input').val(i);
+	});
+	$('.booking-form-input-wrapper:nth-child(2) i.icon-minus').click(function () {
+		i--;
+		$('.booking-form-input-wrapper:nth-child(2) input').val(i);
+		if (i <= 0) {
+			i = 0;
+			$('.booking-form-input-wrapper:nth-child(2) input').val(i);
+		};
+	});
+	var k = 0;
+	$('.booking-form-input-wrapper:nth-child(3) i.icon-plus').click(function () {
+		k++;
+		$('.booking-form-input-wrapper:nth-child(3) input').val(k);
+	});
+	$('.booking-form-input-wrapper:nth-child(3) i.icon-minus').click(function () {
+		k--;
+		$('.booking-form-input-wrapper:nth-child(3) input').val(k);
+		if (k <= 0) {
+			k = 0;
+			$('.booking-form-input-wrapper:nth-child(3) input').val(k);
+		};
+	});
+}); //End Document Ready
 
 //Google map
 var map;
