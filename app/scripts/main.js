@@ -1,3 +1,19 @@
+$(window).load(function(){
+	$('.cover').liCover({
+		parent: $('.slideshow-item a'),
+		position:'absolute',
+		veticalAlign:'middle',
+		align:'center'
+	});
+
+	$('.cover-3d').liCover({
+		parent: $('.tour-item-wrapper'),
+		position:'absolute',
+		veticalAlign:'middle',
+		align:'center'
+	});
+});
+
 jQuery(document).ready(function($) {
 
 	//Preloader
@@ -47,6 +63,7 @@ jQuery(document).ready(function($) {
 		autoplaySpeed: 5000,
 		speed: 1500,
 		pauseOnHover: false
+		//zIndex: 50
 	});
 
 	//Slider About us
@@ -146,6 +163,32 @@ jQuery(document).ready(function($) {
 				});
 			};
 		});
+
+	//Room - autoheight thumbnails
+	var item_width = $('.slideshow-item').width(),
+	item_height = $('.slideshow-item').width() * 67.97 / 100,
+	display_width = $('.slideshow-display').width(),
+	display_height = $('.slideshow-display').width() * 67.97 / 100,
+	tour_width = $('.tour-item').width(),
+	tour_height = $('.tour-item').width() * 67.97 / 100;
+	$('.slideshow-item').height(item_height);
+	$('.slideshow-display').height(display_height);
+	$('.tour-item-wrapper').height(tour_height);
+	$(window).resize(function() {
+		if ($(window).width() < 1320) {
+			item_width = $('.slideshow-item').width(),
+			item_height = $('.slideshow-item').width() * 67.97 / 100;
+			$('.slideshow-item').height(item_height);
+			display_width = $('.slideshow-display').width(),
+			display_height = $('.slideshow-display').width() * 67.97 / 100;
+			$('.slideshow-display').height(display_height);
+			tour_width = $('.tour-item').width(),
+			tour_height = $('.tour-item').width() * 67.97 / 100;
+			$('.tour-item-wrapper').height(tour_height);
+		};
+	});
+
+
 
 	//Calendar
 	$('#booking-datepicker').datepicker({

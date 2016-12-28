@@ -26,54 +26,59 @@
 
       <!-- Header -->
       <header>
-        <div class="container-full">
-          <div class="menu-btn">
-            <a href="#"><i class="icon icon-menu"></i>меню</a>
-          </div>
+        <div class="header-content">
+          <div class="container-full">
+            <div class="menu-btn">
+              <a href="#"><i class="icon icon-menu"></i>меню</a>
+            </div>
 
-          <nav class="main-menu">
-            <ul class="menu">
-              <li><a href="#"><i class="icon-ic-montagne-noire"></i> О нас</a></li>
-              <li><a href="#"><i class="icon-business"></i>Номера</a></li>
-              <li><a href="#"><i class="icon-plate-fork-and-knife"></i>Ресторан</a></li>
-              <li><a href="#"><i class="icon-microphone-black-shape"></i>Конференц-зал</a></li>
-              <li><a href="#"><i class="icon-percentage"></i>Спецпредложения</a></li>
-              <li><a href="#"><i class="icon-shop"></i>Цены</a></li>
-              <li><a href="#"><i class="icon-cube"></i>3d-тур</a></li>
-              <li><a href="#"><i class="icon-glasses"></i>Услуги и развлечения</a></li>
-              <li><a href="#"><i class="icon-photo-camera"></i>Фото</a></li>
-              <li><a href="#"><i class="icon-envelope"></i>Контакты</a></li>
-            </ul>
-          </nav>
+            <nav class="main-menu">
+              <ul class="menu">
+                <li><a href="#"><i class="icon-ic-montagne-noire"></i> О нас</a></li>
+                <li><a href="#"><i class="icon-business"></i>Номера</a></li>
+                <li><a href="#"><i class="icon-plate-fork-and-knife"></i>Ресторан</a></li>
+                <li><a href="#"><i class="icon-microphone-black-shape"></i>Конференц-зал</a></li>
+                <li><a href="#"><i class="icon-percentage"></i>Спецпредложения</a></li>
+                <li><a href="#"><i class="icon-shop"></i>Цены</a></li>
+                <li><a href="#"><i class="icon-cube"></i>3d-тур</a></li>
+                <li><a href="#"><i class="icon-glasses"></i>Услуги и развлечения</a></li>
+                <li><a href="#"><i class="icon-photo-camera"></i>Фото</a></li>
+                <li><a href="#"><i class="icon-envelope"></i>Контакты</a></li>
+              </ul>
+            </nav>
 
-          <div class="logo">
-            <a href="#"><img src="images/logo.png" alt=""></a>
-          </div>
+            <div class="logo">
+              <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
 
-          <div class="booking-btn">
-            <a href="#"><i class="icon icon-close"></i>бронирование</a>
-          </div>
+            <div class="booking-btn">
+              <a href="#"><i class="icon icon-close"></i>бронирование</a>
+            </div>
 
-          <div class="booking-box">
-            <form action="#" id="booking-form" class="booking-form">
-              <div class="booking-form-input-wrapper">
-                <input type="text" placeholder="Дата заезда" readonly="readonly">
-                <i class="icon icon-calendar"></i>
-              </div>
+            <div class="booking-box">
+              <form action="#" id="booking-form" class="booking-form">
+                <div class="booking-form-input-wrapper">
+                  <input type="text" placeholder="Дата заезда / выезда" readonly="readonly" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" id="booking-datepicker">
+                  <i class="icon icon-calendar"></i>
+                </div>
 
-              <div class="booking-form-input-wrapper">
+              <!-- <div class="booking-form-input-wrapper">
                 <input type="text" placeholder="Дата выезда" readonly="readonly">
                 <i class="icon icon-calendar"></i>
-              </div>
+              </div> -->
 
               <div class="booking-form-input-wrapper">
-                <input type="text" placeholder="2" maxlength="2">
+                <input type="text" placeholder="0" maxlength="2" pattern="[0-9]*" value="">
                 <span>взрослых</span>
+                <i class="icon icon-minus"></i>
+                <i class="icon icon-plus"></i>
               </div>
 
               <div class="booking-form-input-wrapper">
-                <input type="text" placeholder="0" maxlength="2">
+                <input type="text" placeholder="0" maxlength="2" pattern="[0-9]*">
                 <span>детей</span>
+                <i class="icon icon-minus"></i>
+                <i class="icon icon-plus"></i>
               </div>
 
               <button for="booking-form">забронировать <i class="icon icon-arrow-right"></i></button>
@@ -83,102 +88,103 @@
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!-- Contacts section -->
-      <section id="contacts">
-        <div class="section-title">
-          <h2>Контакты</h2>
-          <i class="icon icon-title-label-light"></i>
-        </div>
+    <!-- Contacts section -->
+    <section id="contacts">
+      <div class="section-title">
+        <h2>Контакты</h2>
+        <i class="icon icon-title-label-light"></i>
+      </div>
 
-        <div class="contacts-content">
-          <div class="contacts-content-left">
-            <i class="icon icon-adress"></i>
-            <div class="contacts-content-left-text">
-              <p>Адрес: Республика Башкортостан,<br>с. Новоабзаково,<br>Горнолыжная 33</p>
-            </div>
-          </div>
-
-          <div class="contacts-content-center">
-            <i class="icon icon-skype"></i>
-            <div class="contacts-content-center-text">
-              <p>Skype: tau-tash</p>
-            </div>
-          </div>
-
-          <div class="contacts-content-right">
-            <i class="icon icon-phone"></i>
-            <div class="contacts-content-right-text">
-              <p>+7 (3519) 59-12-77 круглосуточно<br>7 (34792) 70491 факс<br>+7 922 712 11 77</p>
-            </div>
+      <div class="contacts-content">
+        <div class="contacts-content-left">
+          <i class="icon icon-adress"></i>
+          <div class="contacts-content-left-text">
+            <p>Адрес: Республика Башкортостан,<br>с. Новоабзаково,<br>Горнолыжная 33</p>
           </div>
         </div>
 
-        <div id="map"></div>
-      </section>
-
-      <!-- Write to us -->
-      <section id="write-to-us">
-        <div class="section-title">
-          <h2>Написать нам</h2>
-        </div>
-        <div class="container-fixed">
-          <form id="contacts-form" class="contacts-form">
-            <div class="input-wrapper">
-              <input type="text" placeholder="Ваше имя">
-              <input type="text" class="left" id="field" name="field" placeholder="Ваша электронная почта*">
-            </div>
-            <textarea placeholder="Текст отзыва"></textarea>
-            <input type="submit" value="отправить сообщение">
-          </form>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer>
-        <div class="footer-content">
-          <div class="footer-left">
-            <h6>2016 г. – Гостинично-развлекательный комплекс «Тау-Таш»</h6>
-          </div>
-          <div class="footer-right">
-            <div class="footer-logo">
-              <a href="http://internetlab.ru/" target="_blank"><i class="icon icon-footer-logo"></i></a>
-            </div>
+        <div class="contacts-content-center">
+          <i class="icon icon-skype"></i>
+          <div class="contacts-content-center-text">
+            <p>Skype: tau-tash</p>
           </div>
         </div>
-      </footer>
 
-      <!-- Section Popup -->
-      <div id="aboutus-popup" class="white-popup mfp-hide">
-        <h2>Написать отзыв</h2>
-        <form id="aboutus-form" class="aboutus-form">
+        <div class="contacts-content-right">
+          <i class="icon icon-phone"></i>
+          <div class="contacts-content-right-text">
+            <p>+7 (3519) 59-12-77 круглосуточно<br>7 (34792) 70491 факс<br>+7 922 712 11 77</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="map"></div>
+    </section>
+
+    <!-- Write to us -->
+    <section id="write-to-us">
+      <div class="section-title">
+        <h2>Написать нам</h2>
+      </div>
+      <div class="container-fixed">
+        <form id="contacts-form" class="contacts-form">
           <div class="input-wrapper">
             <input type="text" placeholder="Ваше имя">
-            <!-- <label for="field">Required: </label> -->
             <input type="text" class="left" id="field" name="field" placeholder="Ваша электронная почта*">
           </div>
           <textarea placeholder="Текст отзыва"></textarea>
           <input type="submit" value="отправить сообщение">
         </form>
       </div>
+    </section>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-      </script>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <h6>2016 г. – Гостинично-развлекательный комплекс «Тау-Таш»</h6>
+        </div>
+        <div class="footer-right">
+          <div class="footer-logo">
+            <a href="http://internetlab.ru/" target="_blank"><i class="icon icon-footer-logo"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-      <script src="scripts/vendor.js"></script>
+    <!-- Section Popup -->
+    <div id="aboutus-popup" class="white-popup mfp-hide">
+      <h2>Написать отзыв</h2>
+      <form id="aboutus-form" class="aboutus-form">
+        <div class="input-wrapper">
+          <input type="text" placeholder="Ваше имя">
+          <!-- <label for="field">Required: </label> -->
+          <input type="text" class="left" id="field" name="field" placeholder="Ваша электронная почта*">
+        </div>
+        <textarea placeholder="Текст отзыва"></textarea>
+        <input type="submit" value="отправить сообщение">
+      </form>
+    </div>
 
-      <script src="scripts/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
 
-      <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCUN-QHFsMjkkltWfZg0S8zzY7k3XQEQMU&callback=initMap" async defer></script>
+    <script src="scripts/vendor.js"></script>
+
+    <script src="scripts/main.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCUN-QHFsMjkkltWfZg0S8zzY7k3XQEQMU&callback=initMap" async defer></script>
 
 
-    </body>
-    </html>
+  </body>
+  </html>

@@ -9,9 +9,18 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="styles/vendor.css">
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
+  <link rel="stylesheet" href="/bower_components/jquery-nice-select/css/nice-select.css" />
+  <link rel="stylesheet" href="/bower_components/air-datepicker/dist/css/datepicker.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
 
+  <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 
 </head>
 <body>
@@ -619,9 +628,20 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <script src="scripts/vendor.js"></script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="/bower_components/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="/bower_components/air-datepicker/dist/js/datepicker.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
+    <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 
     <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCUN-QHFsMjkkltWfZg0S8zzY7k3XQEQMU&callback=initMap" async defer></script>
 
